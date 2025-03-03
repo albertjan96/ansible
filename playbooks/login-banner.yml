@@ -1,6 +1,6 @@
 ---
 - name: Set up post-login banner
-  hosts: all  # You can specify a group or individual hosts here
+  hosts: localhost  # You can specify a group or individual hosts here
   become: true  # Elevate privileges to root for writing to system files
 
   tasks:
