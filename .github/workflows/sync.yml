@@ -1,0 +1,19 @@
+name: Sync Repository to Server
+
+on:
+  push:
+    branches:
+      - main  # Trigger only on pushes to the main branch
+
+jobs:
+  sync-repo:
+    runs-on: self-hosted  # This assumes you have a self-hosted runner configured
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2  # Check out the repository so we can sync it
+
+    - name: Sync repository to server
+      run: |
+        cd /etc/ansible
+        git pull
