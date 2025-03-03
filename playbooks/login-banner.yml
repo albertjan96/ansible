@@ -7,7 +7,12 @@
     - name: Ensure the banner is displayed in /etc/motd
       copy:
         content: |
-          This system is managed by Ansible
+             *******************************
+              *                             *
+              * This system is managed by   *
+              * Ansible                     *
+              *                             *
+              *******************************
         dest: /etc/motd
         owner: root
         group: root
@@ -17,7 +22,12 @@
     - name: Ensure the banner is displayed in /etc/issue (for some Linux distros)
       copy:
         content: |
-          This system is managed by Ansible
+          *******************************
+              *                             *
+              * This system is managed by   *
+              * Ansible                     *
+              *                             *
+              *******************************
         dest: /etc/issue
         owner: root
         group: root
