@@ -1,5 +1,6 @@
 This project contains Ansible playbooks and roles for automating various tasks and configurations. The goal is to simplify and streamline the management of infrastructure and applications. It runs on an Ubuntu server.
 
+it is currentlcy maintained
 ## Getting Started
 
 To get started with this project, ensure you have Ansible installed on your system. You can install Ansible using pip:
